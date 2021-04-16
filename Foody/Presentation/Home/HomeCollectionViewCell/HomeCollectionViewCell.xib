@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="Foody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUe-11-xcQ">
+                        <rect key="frame" x="5" y="5" width="110" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rDi-Bg-UB8">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peB-Gy-PLu">
+                                <rect key="frame" x="29.5" y="44" width="51.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdj-GM-UED">
+                                <rect key="frame" x="39.5" y="73" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rDi-Bg-UB8" firstAttribute="top" secondItem="hUe-11-xcQ" secondAttribute="top" id="3g1-a3-Alg"/>
+                            <constraint firstAttribute="height" constant="110" id="5rt-vF-56I"/>
+                            <constraint firstAttribute="width" constant="110" id="AyS-Ec-MnH"/>
+                            <constraint firstItem="peB-Gy-PLu" firstAttribute="centerX" secondItem="hUe-11-xcQ" secondAttribute="centerX" id="Jh3-7f-sZs"/>
+                            <constraint firstItem="peB-Gy-PLu" firstAttribute="top" secondItem="hUe-11-xcQ" secondAttribute="top" constant="44" id="ZbE-dI-6Ua"/>
+                            <constraint firstAttribute="bottom" secondItem="rDi-Bg-UB8" secondAttribute="bottom" id="cmO-dY-wje"/>
+                            <constraint firstItem="wdj-GM-UED" firstAttribute="centerX" secondItem="peB-Gy-PLu" secondAttribute="centerX" id="fbk-Bm-0ua"/>
+                            <constraint firstItem="wdj-GM-UED" firstAttribute="top" secondItem="peB-Gy-PLu" secondAttribute="bottom" constant="5" id="jtv-gZ-AsU"/>
+                            <constraint firstAttribute="trailing" secondItem="rDi-Bg-UB8" secondAttribute="trailing" id="sCg-ZF-4bP"/>
+                            <constraint firstItem="rDi-Bg-UB8" firstAttribute="leading" secondItem="hUe-11-xcQ" secondAttribute="leading" id="xFu-T5-cBq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVU-SU-XJ4">
+                        <rect key="frame" x="47" y="125" width="26.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="oVU-SU-XJ4" firstAttribute="top" secondItem="hUe-11-xcQ" secondAttribute="bottom" constant="10" id="Ktm-FW-xTt"/>
+                <constraint firstItem="hUe-11-xcQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="P2D-nH-I1i"/>
+                <constraint firstAttribute="trailing" secondItem="hUe-11-xcQ" secondAttribute="trailing" constant="5" id="XKr-fU-gp1"/>
+                <constraint firstItem="oVU-SU-XJ4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lw7-1L-4wf"/>
+                <constraint firstItem="hUe-11-xcQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="xwe-Qr-f2R"/>
+            </constraints>
+            <size key="customSize" width="120" height="139"/>
+            <connections>
+                <outlet property="cardBrandLabel" destination="oVU-SU-XJ4" id="evk-VD-mpG"/>
+                <outlet property="cardOfferSubTitle" destination="wdj-GM-UED" id="hGl-Gz-UH0"/>
+                <outlet property="cardOfferTitle" destination="peB-Gy-PLu" id="WJs-b1-XQJ"/>
+                <outlet property="imageView" destination="rDi-Bg-UB8" id="9uh-hV-5AP"/>
+            </connections>
+            <point key="canvasLocation" x="22.399999999999999" y="130.88455772113943"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
