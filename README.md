@@ -5,3 +5,6 @@
 4. The MVC UI design principle has been used in this project.
 5. CacheManager is responsible for caching the restaurant images. So that the images loaded once is not going to load again from the server.
 6. The app is landscape and portrait compatible.
+
+![Screenshot1](https://github.com/s4nj33b/Foody/blob/main/1.png?raw=true)
+![Screenshot2](https://github.com/s4nj33b/Foody/blob/main/2.png?raw=true)
